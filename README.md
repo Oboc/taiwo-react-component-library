@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ##Demo screenshot
 ###Button screenshot
@@ -12,18 +13,111 @@
 
 
 # React + Vite
+=======
+# 📘 Reusable React UI Component Library
+>>>>>>> 5d8468e (Update README with screenshot project description)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This project is a reusable UI component library built with React.  
+It contains configurable and accessible UI components designed for form handling and consistent interface design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The goal of this project is to build reusable components instead of repeating UI logic across pages.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Components Included
 
-## Expanding the ESLint configuration
+### 🔘 Button Component
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A reusable button component with styling variants and sizes.
+
+**Features**
+- Multiple variants (primary, secondary, outline)
+- Different sizes
+- Disabled state
+- Submit support
+- Reusable CSS styling
+
+**Props**
+- variant
+- size
+- disabled
+- type
+- children / text
+
+---
+
+### 📝 Input Component
+
+A reusable and accessible input field component.
+
+**Features**
+- Label support
+- Error message display
+- Required indicator
+- Disabled state
+- Controlled input pattern
+- Accessibility attributes included
+
+**Props**
+- label
+- type
+- name
+- value
+- onChange
+- placeholder
+- required
+- disabled
+- error
+
+**Accessibility Support**
+- label linked with input using htmlFor
+- error message linked using aria-describedby
+- aria-invalid applied when error exists
+
+---
+
+### 📦 Form Component
+
+Reusable form wrapper to handle submission and layout.
+
+**Features**
+- Handles form submission
+- Accepts children components
+- Central place for validation
+- Reusable layout container
+
+**Props**
+- onSubmit
+- children
+- className
+
+---
+
+## 🧪 Demo Pages
+
+The project includes demo pages to test components visually.
+
+- ButtonDemo — shows all button variants and states
+- InputDemo — shows different input types and errors
+- FormDemo — shows validation behavior
+
+---
+
+## 🧠 Architecture Decisions
+
+- Validation handled at form level
+- Inputs receive error messages via props
+- Components are controlled
+- Accessibility built into components
+- Styling separated into CSS files
+- Props-driven configuration
+
+---
+
+## 🚀 How to Run the Project
+
+```bash
+npm install
+npm run dev

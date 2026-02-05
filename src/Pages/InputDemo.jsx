@@ -7,7 +7,7 @@ const [emailValue, setEmailValue] =useState ("")
 const [passwordValue, setPasswordValue] =useState ("")
 
   return (
-    <div>
+    <div className='d-flex align-items-center justify-content-center vh-100 p-5 '>
         <div className="div-wrapper">
             {/* Normal Text Input */}
 <Input
@@ -38,7 +38,8 @@ const [passwordValue, setPasswordValue] =useState ("")
     value={passwordValue}
     onChange={(e) => setPasswordValue(e.target.value)}
     placeholder="Enter your password"
-    error={passwordValue.length < 6 ? "Password too short" : ""}
+   
+   
 />
 
 {/* Disabled Input */}

@@ -28,7 +28,7 @@ className="input-label">
         
         {/* Error messages*/}
       {
-        error && <small id={$`{name}-error`}
+        error && <small id={`${name}-error`}
         className='input-error-text' >{error}</small>
       }
             
