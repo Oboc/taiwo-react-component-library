@@ -9,7 +9,7 @@ const Form = ({onSubmit, children, className}) => {
   return (
     <div>
         <form onSubmit={onSubmit}
-        className={`form-base ${className || ""}`}>
+        className={`form-base ${className || ""}`} aria-label ="form">
                 {children}
         </form>
     </div>

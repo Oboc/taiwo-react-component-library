@@ -11,6 +11,7 @@ const Button = ({children,variant ="primary", size="md", disabled = false, onCli
       
       <button className={className}
       type={type}
+      aria-label={children}
       onClick={disabled ? undefined : onClick}
       disabled={disabled}
       aria-disabled={disabled}>

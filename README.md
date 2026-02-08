@@ -1,123 +1,130 @@
-<<<<<<< HEAD
+# Component Library
 
-##Demo screenshot
-###Button screenshot
-<img width="952" height="438" alt="image" src="https://github.com/user-attachments/assets/3953a283-a1c3-47ba-94bd-1002a27f3fc6" />
-###Input screenshot
-<img width="953" height="438" alt="image" src="https://github.com/user-attachments/assets/39746e5e-669b-4b8c-9398-f83c3e5728fb" />
+A reusable React component library built with Vite and documented with Storybook.  
+Includes accessible and customizable UI components.
 
+## Components
 
-###Form screenshot
-<img width="958" height="440" alt="image" src="https://github.com/user-attachments/assets/80d1283f-49b1-4b81-8482-6141eac23088" />
+- Button (variants supported)
+- Input (text, password, email)
+- Form wrapper
 
+## Tech Stack
 
+- React
+- Vite
+- Storybook
+- ARIA accessibility attributes
 
-# React + Vite
-=======
-# 📘 Reusable React UI Component Library
->>>>>>> 5d8468e (Update README with screenshot project description)
-
-## 📌 Project Overview
-
-This project is a reusable UI component library built with React.  
-It contains configurable and accessible UI components designed for form handling and consistent interface design.
-
-The goal of this project is to build reusable components instead of repeating UI logic across pages.
-
----
-
-## 🧩 Components Included
-
-### 🔘 Button Component
-
-A reusable button component with styling variants and sizes.
-
-**Features**
-- Multiple variants (primary, secondary, outline)
-- Different sizes
-- Disabled state
-- Submit support
-- Reusable CSS styling
-
-**Props**
-- variant
-- size
-- disabled
-- type
-- children / text
-
----
-
-### 📝 Input Component
-
-A reusable and accessible input field component.
-
-**Features**
-- Label support
-- Error message display
-- Required indicator
-- Disabled state
-- Controlled input pattern
-- Accessibility attributes included
-
-**Props**
-- label
-- type
-- name
-- value
-- onChange
-- placeholder
-- required
-- disabled
-- error
-
-**Accessibility Support**
-- label linked with input using htmlFor
-- error message linked using aria-describedby
-- aria-invalid applied when error exists
-
----
-
-### 📦 Form Component
-
-Reusable form wrapper to handle submission and layout.
-
-**Features**
-- Handles form submission
-- Accepts children components
-- Central place for validation
-- Reusable layout container
-
-**Props**
-- onSubmit
-- children
-- className
-
----
-
-## 🧪 Demo Pages
-
-The project includes demo pages to test components visually.
-
-- ButtonDemo — shows all button variants and states
-- InputDemo — shows different input types and errors
-- FormDemo — shows validation behavior
-
----
-
-## 🧠 Architecture Decisions
-
-- Validation handled at form level
-- Inputs receive error messages via props
-- Components are controlled
-- Accessibility built into components
-- Styling separated into CSS files
-- Props-driven configuration
-
----
-
-## 🚀 How to Run the Project
+## Installation
 
 ```bash
-npm install
-npm run dev
+npm install component-library
+
+## Usage
+
+```jsx
+import { Button, Input, Form } from "component-library-ui";
+
+function Demo() {
+  return (
+    <Form>
+      <Input placeholder="Username" />
+      <Input type="password" placeholder="Password" />
+      <Button variant="primary">Submit</Button>
+    </Form>
+  );
+}
+```
+
+
+
+## Storybook Documentation
+
+This component library is fully documented using Storybook for interactive component previews and prop controls.
+
+Run Storybook locally:
+
+```bash
+npm run storybook
+```
+
+Then open in your browser:
+
+```
+http://localhost:6006
+```
+
+Storybook includes:
+
+- Component variants
+- Live prop controls
+- Visual testing previews
+- Usage demonstrations
+
+
+
+## Build Library
+
+To build the reusable component package:
+
+```bash
+npm run build
+```
+
+The compiled output will be generated inside:
+
+```
+dist/
+```
+
+This folder is what gets published and distributed.
+
+
+
+## Package Test (Local Install Simulation)
+
+To generate a local installable package archive:
+
+```bash
+npm pack
+```
+
+This creates a `.tgz` package file which can be installed locally for testing.
+
+
+
+## Accessibility
+
+This component library follows accessibility best practices:
+
+- Proper label + input association
+- ARIA attributes for error states
+- Keyboard navigable controls
+- Screen reader friendly validation messages
+- Buttons usable without mouse
+- Error states announced with aria-describedby
+- aria-invalid applied when needed
+
+
+
+## Project Structure
+
+```
+src/
+  Components/
+    Button/
+    Input/
+    Form/
+  index.js
+
+.storybook/
+dist/
+```
+
+
+
+## Author
+
+ OLORUNSOLA, Taiwo Joshua
+Built with React + Vite + Storybook

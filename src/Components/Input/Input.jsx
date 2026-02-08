@@ -14,11 +14,12 @@ className="input-label">
         )
       }
         {/*Input field*/}
-      <input type={type}
+      <input type={type}     
       name ={name}
       value ={value}
       onChange={onChange}
       placeholder={placeholder}
+      aria-label={placeholder}
       required={required}
       disabled={disabled}
       className={`input-base ${error ? "input-error": ""}}`}
